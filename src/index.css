@@ -42,7 +42,7 @@ body {
 	min-height: 100dvh;
 	display: grid;
 	place-content: center;
-	padding-inline: 2em;
+	padding-inline: 1em;
 
 	background-color: var(--color-neutral-lighter);
 }
