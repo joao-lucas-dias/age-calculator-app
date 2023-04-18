@@ -1,21 +1,20 @@
+import { FormEvent } from "react";
+import Button from "./Button/Button";
 import classes from "./Form.module.css";
+import Inputs from "./Inputs/Inputs";
 
 const Form = () => {
+	const formSubmitHandler = (event: FormEvent) => {
+		event.preventDefault();
+
+		console.log("Submit");
+	}
+
 	return (
-		<div className={classes.wrapper}>
-			<span className={classes.input_wrapper}>
-        <p className={classes.label}>Day</p>
-				<input className={classes.input} type="number" placeholder="DD" />
-			</span>
-			<span className={classes.input_wrapper}>
-        <p className={classes.label}>Month</p>
-				<input className={classes.input} type="number" placeholder="MM" />
-			</span>
-			<span className={classes.input_wrapper}>
-        <p className={classes.label}>Year</p>
-				<input className={classes.input} type="number" placeholder="YYYY" />
-			</span>
-		</div>
+		<form className={classes.wrapper} onSubmit={formSubmitHandler}>
+			<Inputs />
+			<Button />
+		</form>
 	);
 };
 

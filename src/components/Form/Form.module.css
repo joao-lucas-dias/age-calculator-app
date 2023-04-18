@@ -1,25 +1,4 @@
 .wrapper {
-  display: flex;
-  justify-content: space-between;
-  gap: 1.5em;
-}
-
-.wrapper > * {
-  width: calc(100% / 3);
-}
-
-.label {
-  font-size: 24px;
-  text-transform: uppercase;
-  color: var(--color-neutral-dark);
-}
-
-.input {
-  width: min-content;
-  padding: .5em;
-  font-size: 32px;
-  border-radius: 5px;
-  border: 1px solid var(--color-neutral-dark);
-  color: var(--color-neutral-darkest);
-  background-color: var(--color-neutral-lightest);
+  display: grid;
+  grid-row-gap: 2em;
 }

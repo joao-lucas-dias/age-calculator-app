@@ -1,0 +1,30 @@
+.wrapper {
+  display: flex;
+  gap: 1em;
+}
+
+.wrapper > * {
+  flex: 1;
+}
+
+.label {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--color-neutral-dark);
+}
+
+.input {
+  width: 100%;
+  padding: .5em .75em;
+
+  font-size: 21px;
+  border-radius: 10px;
+  border: 2px solid var(--color-neutral-light);
+  color: var(--color-neutral-darkest);
+  background-color: var(--color-neutral-lightest);
+}
+
+.input::placeholder {
+  font-size: 21px;
+}

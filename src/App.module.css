@@ -1,6 +1,6 @@
 .wrapper {
   display: grid;
-  grid-row-gap: 2em;
+  grid-row-gap: 1em;
   padding: 2em 1.5em;
 
   background-color: var(--color-neutral-lightest);
