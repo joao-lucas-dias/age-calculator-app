@@ -25,9 +25,9 @@
 	--color-neutral-dark: hsl(0, 1%, 44%);
 	--color-neutral-darkest: hsl(0, 0%, 8%);
 
-	--font-weight-normal: 400i;
+	--font-weight-normal: 400;
 	--font-weight-bold: 700;
-	--font-weight-bolder: 800i;
+	--font-weight-bolder: 800;
 }
 
 /* dark mode user-agent-styles */
@@ -42,6 +42,9 @@ body {
 	min-height: 100dvh;
 	display: grid;
 	place-content: center;
+	padding-inline: 2em;
+
+	background-color: var(--color-neutral-lighter);
 }
 
 /* responsive images/videos */

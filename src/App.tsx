@@ -1,18 +1,14 @@
-import "./App.css";
+import classes from "./App.module.css";
+import AgeDisplay from "./components/AgeDisplay/AgeDisplay";
+import Form from "./components/Form/Form";
 
-function App() {
+const App = () => {
 	return (
-		<>
-			<span>Day DD Month MM Year YYYY -- years -- months -- days</span>
-			<div className="attribution">
-				Challenge by
-				<a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
-					Frontend Mentor
-				</a>
-				. Coded by <a href="#">Your Name Here</a>.
-			</div>
-		</>
+		<div className={classes.wrapper}>
+			{/* <Form /> */}
+			<AgeDisplay />
+		</div>
 	);
-}
+};
 
 export default App;

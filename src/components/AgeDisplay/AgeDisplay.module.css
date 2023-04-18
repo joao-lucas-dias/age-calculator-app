@@ -1,0 +1,21 @@
+.wrapper  {
+  display: grid;
+}
+
+.row {
+  display: flex;
+  gap: .25em;
+  align-items: baseline;
+
+  font-size: 64px;
+  font-weight: var(--font-weight-bolder);
+  font-style: italic;
+}
+
+.number {
+  color: var(--color-primary);
+}
+
+.label {
+  color: var(--color-neutral-darkest);
+}
