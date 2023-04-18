@@ -1,0 +1,25 @@
+.wrapper {
+  position: relative;
+  display: grid;
+  place-content: center;
+}
+
+.line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  border-bottom: 2px solid var(--color-neutral-light);
+}
+
+.button {
+  padding: 1em;
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: 50%;
+  z-index: 100;
+}
+
+.button > svg {
+  scale: .75;
+}
