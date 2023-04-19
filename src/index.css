@@ -42,6 +42,7 @@ body {
 	min-height: 100dvh;
 	display: grid;
 	place-content: center;
+	grid-row-gap: 1em;
 	padding-inline: 1em;
 
 	background-color: var(--color-neutral-lighter);
@@ -54,4 +55,16 @@ svg,
 video {
 	display: block;
 	max-width: 100%;
+}
+
+@media (min-width: 1024px) {
+	body {
+		padding-inline: 15em;
+	}
+}
+
+@media (min-width: 1440px) {
+	body {
+		padding-inline: 20em;
+	}
 }

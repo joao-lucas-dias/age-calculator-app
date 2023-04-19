@@ -1,25 +1,44 @@
 .wrapper {
-  position: relative;
-  display: grid;
-  place-content: center;
+	position: relative;
+	display: grid;
+	place-content: center;
 }
 
 .line {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  border-bottom: 2px solid var(--color-neutral-light);
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	border-bottom: 2px solid var(--color-neutral-light);
 }
 
 .button {
-  padding: 1em;
-  background-color: var(--color-primary);
-  border: none;
-  border-radius: 50%;
-  z-index: 100;
+	padding: 1em;
+	background-color: var(--color-primary);
+	border: none;
+	border-radius: 50%;
+	z-index: 100;
 }
 
 .button > svg {
-  scale: .75;
+	scale: 0.75;
+}
+
+@media (min-width: 1440px) {
+	.wrapper {
+		place-content: end;
+	}
+
+	.button {
+		padding: 1.75em;
+    cursor: pointer;
+	}
+
+  .button:hover {
+    background-color: var(--color-neutral-darkest);
+  }
+
+	.button > svg {
+		scale: 1;
+	}
 }
