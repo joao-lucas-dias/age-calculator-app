@@ -29,4 +29,4 @@ Users should be able to:
 
 ## Demo
 
-- Live Site URL: https://joao-lucas-dias.github.io/age-calculator-app/
+- Live Site URL: https://age-calculator-app-eight.vercel.app/
